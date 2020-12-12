@@ -1,5 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
+import io from 'socket.io-client';
+import logo from './logo.svg';
+
+io.connect('http://localhost:4000');
 
 function App() {
   return (
